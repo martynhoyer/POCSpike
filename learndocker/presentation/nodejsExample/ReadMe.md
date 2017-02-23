@@ -1,18 +1,21 @@
 
-### Check if Docker is Installed
-    docker --version
+### Check if Docker is installed
 
-### Build 
+`docker --version`
 
-1. docker build -t talk/nodejsexample:1.0 .
+### Build
 
-#### Run your docker image  
-2. docker run -d -p 9080:9080 talk/nodejsexample:1.0
+`docker build -t talk/nodejsexample:1.0 .`
 
-#### To Test 
+### Run your docker image
 
-3. Locally : curl http://127.0.0.1:9080/
+`docker run -d -p 9080:9080 talk/nodejsexample:1.0`
 
-4. Lan
-    - Get your IP : ifconfig | grep "inet " | grep -v 127.0.0.1
-    - curl http://<YourIP>:9080
+### To test
+
+Locally: `curl http://127.0.0.1:9080/`
+
+Lan:
+
+* Get your IP: `ifconfig | grep "inet " | grep -v 127.0.0.1`
+* curl `http://<YourIP>:9080`
